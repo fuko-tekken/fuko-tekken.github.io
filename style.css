@@ -163,7 +163,7 @@ body{
     width: 150%;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-60%);
     z-index: -1;
   }
 
