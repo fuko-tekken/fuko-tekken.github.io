@@ -88,4 +88,8 @@ body{
   .bar_right_r{
     display: none;
   }
+  
+  .top_img{
+    margin-top: 75px;
+  }
 }
