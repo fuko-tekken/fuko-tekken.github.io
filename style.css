@@ -65,14 +65,6 @@ li{
   list-style: none;
 }
 
-.hamburger_link{
-  font-size: 40pt;
-  color: #ffffff;
-  text-decoration: none;
-  line-height: 60pt;
-  font-weight: 600; 
-}
-
 .top_img_pc{
   width: 100%;
 }
@@ -166,6 +158,14 @@ li{
     opacity: 0;
     transition: opacity 0.3s, display 0.5s;
     transition-behavior: allow-discrete;
+  }
+
+  .hamburger_link{
+    font-size: 40pt;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 80pt;
+    font-weight: 300; 
   }
 
   /* activeクラスが付与されたときのメニューのスタイル */
