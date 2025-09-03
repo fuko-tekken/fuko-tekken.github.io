@@ -170,17 +170,4 @@ body{
   .top_img_sp{
     display: inline;
   }
-
-  /*.top_img{
-    display: block;
-    width: 150%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-60%);
-    z-index: -1;
-  }
-
-  .top_img{
-    margin-top: 75px;
-  }*/
 }
