@@ -21,8 +21,13 @@ body{
   margin-right: 15px;
 }
 
+.bar h6{
+  font-weight: 400;
+}
+
 .bar p{
   font-size: 15pt;
+  font-weight: 300;
 }
 
 .bar_right_l{
@@ -45,4 +50,18 @@ body{
 
 .top_img{
   width: 100%;
+}
+
+@media screen and (max-width:1000px) {
+  .bar_right_l{
+    display: none;
+  }
+
+  .bar_right{
+    display: none;
+  }
+
+  .bar_right_r{
+    display: none;
+  }
 }
