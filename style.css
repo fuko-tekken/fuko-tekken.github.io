@@ -53,6 +53,18 @@ body{
   color: #000000;
 }
 
+.hamburger-menu{
+  display: none;
+  margin-right: 50px;
+  margin-left: auto;
+}
+
+.menu{
+  display: none;
+  margin-right: 50px;
+  margin-left: auto;
+}
+
 .top_img{
   width: 100%;
 }
@@ -88,7 +100,63 @@ body{
   .bar_right_r{
     display: none;
   }
-  
+
+  /* ハンバーガーメニューのスタイル */
+  .hamburger-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  /* ハンバーガーメニューのアイコンのスタイル */
+  .hamburger-line{
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 4px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  /* activeクラスのスタイル */
+  .active .hamburger-line:nth-child(1){
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .active .hamburger-line:nth-child(2){
+    opacity: 0;
+  }
+
+  .active .hamburger-line:nth-child(3){
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  /* メニューのスタイル */
+  .menu{
+    display: none;
+    background-color: #f0f0f0;
+    padding: 10px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: 0;
+    opacity: 0;
+    transition: opacity 0.3s, display 0.5s;
+    transition-behavior: allow-discrete;
+  }
+
+  /* activeクラスが付与されたときのメニューのスタイル */
+  .active + .menu{
+    display: block;
+    opacity: 1;
+    @starting-style {
+      opacity: 0;
+    }
+  }
+
   .top_img{
     margin-top: 75px;
   }
