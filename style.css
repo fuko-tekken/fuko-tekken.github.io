@@ -32,25 +32,37 @@ body{
 
 .bar p{
   font-size: 15pt;
+  line-height: 25pt;
   font-weight: 300;
 }
 
 .bar_right_l{
   margin-left: auto;
-  margin-right: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 30px;
 }
 
 .bar_right{
-  margin-right: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 30px;
 }
 
 .bar_right_r{
-  margin-right: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 40px;
 }
 
 .bar a{
   text-decoration: none;
   color: #000000;
+}
+
+.bar_now{
+  color: #ffffff;
+  background-color: #333333;
 }
 
 .hamburger-menu{
@@ -154,7 +166,7 @@ li{
     background-color: #333333;
     padding: 10px;
     width: auto;
-    padding: 40px 80px;
+    padding: 30px 70px;
     opacity: 0;
     transition: opacity 0.3s, display 0.5s;
     transition-behavior: allow-discrete;
@@ -162,10 +174,16 @@ li{
 
   .hamburger_link{
     font-size: 40pt;
+    padding: 10px 20px;
     color: #ffffff;
     text-decoration: none;
     line-height: 80pt;
-    font-weight: 300; 
+    font-weight: 300;
+  }
+
+  .hamburger_now{
+    color: #333333;
+    background-color: #ffffff;
   }
 
   /* activeクラスが付与されたときのメニューのスタイル */
