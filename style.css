@@ -2,9 +2,8 @@
 
 body{
   margin: 0;
-  padding: 0;
+  padding: 0 0 50px 0;
   font-family: "Noto Sans JP";
-  overflow: hidden;
 }
 
 .bar{
@@ -82,12 +81,66 @@ li{
 
 .top_img_pc{
   width: 100%;
+  margin-top: 75px;
 }
 
 .top_img_sp{
   width: 100%;
   display: none;
-  margin-top: 25px;
+  margin-top: 150px;
+}
+
+h1{
+  border-left: solid 7.5px #c82a46;
+  padding-left: 12px;
+  font-size: 25pt;
+  line-height: 30pt;
+  vertical-align: middle;
+  color: #c82a46;
+  /*color: #4ca78e;*/
+}
+
+.top_text{
+  margin: auto;
+  margin-top: 50px;
+  width: 1000px;
+}
+
+p{
+  /*.top_text pにするかも*/
+  font-size: 15pt;
+  line-height: 25pt;
+  font-weight: 300;
+  margin: 0;
+}
+
+.hello_img{
+  width: 40%;
+  margin-left: 1%;
+  float: right;
+  border-radius: 15px;
+}
+
+h2{
+  font-size: 30pt;
+  font-weight: 500;
+  margin: 0;
+}
+
+h3{
+  color: #ffffff;
+  background-color: #ff0000;
+  font-size: 30pt;
+  font-weight: 500;
+  line-height: 58px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 1% 0 0;
+  float: left;
+}
+
+.newest p{
+  margin: 5px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -204,5 +257,13 @@ li{
 
   .top_img_sp{
     display: inline;
+  }
+
+  .top_text{
+    width: 90%;
+  }
+
+  .hello_img{
+    margin-left: 2%;
   }
 }
