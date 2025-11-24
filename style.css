@@ -141,6 +141,7 @@ h3{
 
 .newest p{
   margin: 5px;
+  /*確認用*/
 }
 
 @media screen and (max-width: 1000px) {
