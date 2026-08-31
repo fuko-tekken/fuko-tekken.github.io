@@ -132,15 +132,40 @@ h3{
   background-color: #ff0000;
   font-size: 30pt;
   font-weight: 500;
-  line-height: 58px;
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 1% 0 0;
   float: left;
 }
 
+.big_thumbnail{
+  width: 300px;
+  border: solid 1px #000000;
+  padding: 1px;
+  margin-right: 2%;
+  float: left;
+}
+
+.small_thumbnail{
+  width: 176px;
+  border: solid 1px #000000;
+  padding: 1px;
+  float: left;
+}
+
 .newest p{
   margin: 5px;
+}
+
+.back{
+  width: 180px;
+  float: left;
+  margin-right: 25px;
+}
+
+.back p{
+  display: block;
+  text-align: center;
 }
 
 @media screen and (max-width: 1000px) {
