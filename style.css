@@ -7,13 +7,16 @@ body{
 }
 
 .bar{
-  position: fixed;
+  position: sticky;
+  top: 0;
   display: flex;
   width: 100%;
   height: 75px;
   padding: 0 25px;
   background-color: #ffffff;
   align-items: center;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
 .bar .logo{
@@ -53,8 +56,7 @@ body{
 
 .bar_right_r{
   padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 40px;
+  margin-right: 0;
 }
 
 .bar a{
@@ -69,6 +71,7 @@ body{
 
 .hamburger-menu{
   display: none;
+  z-index: 1;
 }
 
 .menu{
@@ -79,15 +82,24 @@ li{
   list-style: none;
 }
 
+.hero_pc{
+  height: calc(100svh - 75px);
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero_sp{
+  display: none;
+}
+
 .top_img_pc{
   width: 100%;
-  margin-top: 75px;
 }
 
 .top_img_sp{
   width: 100%;
   display: none;
-  margin-top: 150px;
 }
 
 h1{
@@ -134,7 +146,7 @@ h3{
   font-weight: 500;
   padding-left: 10px;
   padding-right: 10px;
-  margin: 0 1% 0 0;
+  margin: 0 10px 0 0;
   float: left;
 }
 
@@ -142,7 +154,7 @@ h3{
   width: 300px;
   border: solid 1px #000000;
   padding: 1px;
-  margin-right: 2%;
+  margin-right: 20px;
   float: left;
 }
 
@@ -164,11 +176,18 @@ h3{
 }
 
 .back p{
-  display: block;
   text-align: center;
 }
 
-@media screen and (max-width: 1000px) {
+.pc_only{
+  display: block;
+}
+
+.sp_only{
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
   .bar{
     height: 150px;
   }
@@ -276,6 +295,17 @@ h3{
     }
   }
 
+  .hero_pc{
+    display: none;
+  }
+
+  .hero_sp{
+    height: calc(100svh - 150px);
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
   .top_img_pc{
     display: none;
   }
@@ -284,11 +314,65 @@ h3{
     display: inline;
   }
 
+  h1{
+    border-left: solid 15px #c82a46;
+    padding-left: 24px;
+    font-size: 50pt;
+    line-height: 60pt;
+    /*color: #4ca78e;*/
+  }
+
   .top_text{
     width: 90%;
   }
 
+  p{
+    font-size: 30pt;
+    line-height: 50pt;
+  }
+
   .hello_img{
     margin-left: 2%;
+  }
+
+  h2{
+    font-size: 45pt;
+  }
+
+  h3{
+    font-size: 45pt;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: 0;
+    width: calc(50% - 50px);
+    float: none;
+    text-align: center;
+  }
+
+  .big_thumbnail{
+    width: 50%;
+  }
+
+  .small_thumbnail{
+    width: calc(100% - 4px);
+    padding: 1px;
+  }
+
+  .newest p{
+    margin: 10px;
+  }
+
+  .back{
+    width: 30%;
+    margin-right: 5%;
+  }
+
+  .pc_only{
+    display: none;
+  }
+
+  .sp_only{
+    display: block;
   }
 }
