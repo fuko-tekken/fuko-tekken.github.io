@@ -381,7 +381,16 @@ h3{
     width: 50%;
   }
 
+  .big_thumbnail_cs{
+    width: 50%;
+  }
+
   .small_thumbnail{
+    width: calc(100% - 4px);
+    padding: 1px;
+  }
+
+  .small_thumbnail_tmp{
     width: calc(100% - 4px);
     padding: 1px;
   }
